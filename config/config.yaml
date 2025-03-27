@@ -1,5 +1,5 @@
 # Title of the app (shown on top left)
-main_title: "RESQUE"
+main_title: "Alp"
 
 # Background color of the app
 background_color: "#ffffff"
@@ -15,11 +15,11 @@ max_top_papers: 3
 min_RO_warning_threshold: 0
 
 # Show the welcome message (text is defined in config/instructions.md)
-show_instruction: false
+show_instruction: true
 
 # Show the beta warning message
 show_beta_warning: true
-image_url: https://upload.wikimedia.org/wikipedia/commons/0/06/LMU_Muenchen_Logo.svg
+image_url: https://avatars.githubusercontent.com/u/68744864?v=4
 
 meta:
   sources: ["packs/core-meta.json"]
