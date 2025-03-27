@@ -389,6 +389,27 @@
             "condition": "$P_Suitable === 'Yes'"
         },
 
+        {
+            "id": "P_Data_X",
+            "type": "radio",
+            "title": "XXX",
+            "score": {
+                "not_applicable": "false"
+            },
+            "options": [
+                {
+                    "id": "No",
+                    "text": "No",
+                    "value": 5
+                },
+                {
+                    "id": "Yes",
+                    "text": "Yes",
+                    "value": 10
+                }
+            ],
+            "condition": "$P_Suitable === 'Yes'"
+        },
 
 
         {
@@ -980,17 +1001,17 @@
                 {
                     "id": "ZK0",
                     "text": "ZK0 (open data)",
-                    "value": 1
+                    "value": 0.1
                 },
                 {
                     "id": "ZK1",
                     "text": "ZK1 (scientific use file)",
-                    "value": 1
+                    "value": 0.2
                 },
                 {
                     "id": "ZK2",
                     "text": "ZK2 (restricted access) [provide justification]",
-                    "value": 1,
+                    "value": 0.3,
                     "explanation_required": true
                 }
             ],
