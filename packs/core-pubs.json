@@ -989,37 +989,6 @@
             "info": "You can add multiple DOIs or URLs, separated by a semicolon (;)"
         },
         {
-            "id": "P_Data_Open_AccessLevel",
-            "type": "radio",
-            "title": "⤷ Access level",
-            "score": {
-                "not_applicable": "($P_Suitable === 'No') || (($P_Data_Open === 'NotApplicable') && (exists($P_Data_Open_NAExplanation))) || ($P_Data === 'No') || (!($P_Data_Source_NewOwn) && !($P_Data_Source_ReuseOwn) && !($P_Data_Source_ReuseCompilation) && !($P_Data_Source_Simulated))",
-                "condition": "($P_Data === 'Yes' && $P_Data_Open != 'NotAvailable')",
-                "op": "select" 
-            },
-            "options": [
-                {
-                    "id": "ZK0",
-                    "text": "ZK0 (open data)",
-                    "value": 0.1
-                },
-                {
-                    "id": "ZK1",
-                    "text": "ZK1 (scientific use file)",
-                    "value": 0.2
-                },
-                {
-                    "id": "ZK2",
-                    "text": "ZK2 (restricted access) [provide justification]",
-                    "value": 0.3,
-                    "explanation_required": true
-                }
-            ],
-            "info": "For information about access levels, see <a href='https://rdc-psychology.org/access-data'>here</a>. <br> <ul><li>{:'ZK0' | <b>ZK0 / Sharing level 0 ('open for public use')</b>: Neither access to nor use of the data is restricted in any way. Research data provided in this category are typically licensed through standard licenses (e.g., CC-BY-SA 4.0)}</li><li>{:'ZK1' | <b>ZK1 / Sharing level 1 ('open for scientific use')</b>: Data re-use is limited to exclusively scientific purposes by means of a general use license. Proof of affiliation with a scientific institution and a brief description of the intended use must be provided.}</li><li>{:'ZK2' | <b>ZK2 / Sharing level 2 ('restricted scientific use')</b>: Comparable to ZK1, access and re-use is restricted to scientific purposes. In contrast to ZK1, however, individual license agreements are made that may contain other restrictions.}</li></ul>",
-            "condition": "$P_Suitable === 'Yes' && $P_Data === 'Yes' && ($P_Data_Source_NewOwn || $P_Data_Source_ReuseCompilation || $P_Data_Source_ReuseOwn || $P_Data_Source_Simulated) && $P_Data_Open =|= ['YesEntire', 'YesParts', 'YesSynthetic', 'YesAggregate']",
-            "tip_external":"<b>Practical Approach:</b><br><br> Follow the link and determine the access level. The data must be hosted at a repository and access control decisions must be guarded by a <b>predefined</b> set of rules by the repository <mark>(not by the author!)</mark>."
-        },
-        {
             "id": "P_Data_Open_AccessLevel_ZK2Explanation",
             "type": "text",
             "title": "⤷ Access level ZK2: Justification for restricted access",
